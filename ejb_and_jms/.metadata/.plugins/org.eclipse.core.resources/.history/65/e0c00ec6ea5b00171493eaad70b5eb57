@@ -1,0 +1,14 @@
+package com.jspider.jms;
+
+public class HelloWorldProducer {
+
+	public static void main(String[] args) {
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.jspider.jms;
+
+import javax.jms.Connection;
+import javax.jms.Session;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+
+public class HelloWorldProducer {
+
+	public static void main(String[] args) {
+		try {
+			ActiveMQConnectionFactory connectionFactory=new ActiveMQConnectionFactory("tcp://toshiba:61616");
+			Connection connection=connectionFactory.createConnection();
+			connection.start();
+			Session session=connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
+			
+		} catch (Exception e) {
+			
+		}
+
+	}
+
+}

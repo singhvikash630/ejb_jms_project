@@ -1,0 +1,14 @@
+package com.jspider.jms;
+
+import org.omg.CORBA.portable.ApplicationException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class JMSTemplateTest {
+
+	public static void main(String[] args) {
+		ApplicationContext context=new ClassPathXmlApplicationContext(" app-context.xml");
+
+	}
+
+}

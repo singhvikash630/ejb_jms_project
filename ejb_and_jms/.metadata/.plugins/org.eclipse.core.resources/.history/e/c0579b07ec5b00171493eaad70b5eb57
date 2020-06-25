@@ -1,0 +1,19 @@
+package com.jspider.jms;
+
+import javax.jms.Connection;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+
+public class HelloWorldProducer {
+
+	public static void main(String[] args) {
+		try {
+			ActiveMQConnectionFactory connectionFactory=new ActiveMQConnectionFactory("tcp://toshiba:61616");
+			Connection connection=connectionFactory.createConnection();
+		} catch (Exception e) {
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="FirstEjbProjectEAR" key="LASTEARNAME_"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="D:\software\jboss-5.0.0.GA\server\default\deploy\TestEJB.war"/>
+	</list>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="NULL_RUNTIME"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_EJB">
+		<item value="D:\software\jboss-5.0.0.GA\server\default\deploy\FirstEjbProject.jar"/>
+	</list>
+</section>

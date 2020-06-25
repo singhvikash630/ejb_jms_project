@@ -1,0 +1,5 @@
+package com.jspider.entity;
+
+public class Employee {
+
+}

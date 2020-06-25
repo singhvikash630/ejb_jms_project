@@ -1,0 +1,110 @@
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - java.io.IOException: Cannot run program "C:\Program": CreateProcess error=2, The system cannot find the file specified
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.ProcessBuilder.start(ProcessBuilder.java:1047)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.Runtime.exec(Runtime.java:617)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.Runtime.exec(Runtime.java:450)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.Runtime.exec(Runtime.java:347)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at org.jboss.tools.jmx.local.ProcessInformationStore.loadProcessStore(ProcessInformationStore.java:97)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at org.jboss.tools.jmx.local.ProcessInformationStore.refreshProcessInformationStore(ProcessInformationStore.java:64)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at org.jboss.tools.jmx.local.ProcessInformationStore$1.run(ProcessInformationStore.java:135)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.ProcessImpl.create(Native Method)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.ProcessImpl.<init>(ProcessImpl.java:385)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.ProcessImpl.start(ProcessImpl.java:136)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
+2017-06-27 16:34:40,748 ERROR [Worker-6] - System.err - ... 7 more
+2017-06-27 16:36:00,134 ERROR [Worker-0] - System.err - log4j:WARN No appenders could be found for logger (org.jboss.security.SecurityAssociation).
+2017-06-27 16:36:00,134 ERROR [Worker-0] - System.err - log4j:WARN Please initialize the log4j system properly.
+2017-06-28 12:06:45,912 ERROR [Worker-184] - System.err - Jun 28, 2017 12:06:45 PM org.xnio.Xnio <clinit>
+INFO: XNIO Version 3.0.7.GA-redhat-1
+2017-06-28 12:06:45,922 ERROR [Worker-184] - System.err - Jun 28, 2017 12:06:45 PM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.0.7.GA-redhat-1
+2017-06-28 12:06:45,932 ERROR [Worker-180] - System.err - Jun 28, 2017 12:06:45 PM org.jboss.remoting3.EndpointImpl <clinit>
+INFO: JBoss Remoting version 3.2.16.GA
+2017-06-28 13:11:24,717 ERROR [Worker-195] - System.err - log4j:WARN No appenders could be found for logger (org.jboss.security.SecurityAssociation).
+2017-06-28 13:11:24,717 ERROR [Worker-195] - System.err - log4j:WARN Please initialize the log4j system properly.
+2017-06-28 13:11:24,717 ERROR [Worker-195] - System.err - log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+2017-06-28 13:12:27,919 ERROR [JMX client heartbeat 2] - System.err - Jun 28, 2017 1:12:27 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:12:27,929 ERROR [JMX client heartbeat 2] - System.err - Jun 28, 2017 1:12:27 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.net.ConnectException: Connection refused: connect
+2017-06-28 13:12:27,929 ERROR [JMX client heartbeat 2] - System.err - Jun 28, 2017 1:12:27 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:13:31,292 ERROR [JMX client heartbeat 3] - System.err - Jun 28, 2017 1:13:31 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:13:31,312 ERROR [JMX client heartbeat 3] - System.err - Jun 28, 2017 1:13:31 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:13:31,312 ERROR [JMX client heartbeat 3] - System.err - Jun 28, 2017 1:13:31 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:19:26,120 ERROR [JMX client heartbeat 4] - System.err - Jun 28, 2017 1:19:26 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:19:26,130 ERROR [JMX client heartbeat 4] - System.err - Jun 28, 2017 1:19:26 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:19:26,130 ERROR [JMX client heartbeat 4] - System.err - Jun 28, 2017 1:19:26 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:22:06,822 ERROR [JMX client heartbeat 5] - System.err - Jun 28, 2017 1:22:06 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-28 13:22:07,866 ERROR [JMX client heartbeat 5] - System.err - Jun 28, 2017 1:22:07 PM RMIConnector RMIClientCommunicatorAdmin-doStop
+WARNING: Failed to call the method close():java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-28 13:22:07,866 ERROR [JMX client heartbeat 5] - System.err - Jun 28, 2017 1:22:07 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.net.ConnectException: Connection refused: connect
+2017-06-28 13:22:07,866 ERROR [JMX client heartbeat 5] - System.err - Jun 28, 2017 1:22:07 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:22:27,470 ERROR [JMX client heartbeat 6] - System.err - Jun 28, 2017 1:22:27 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:22:27,480 ERROR [JMX client heartbeat 6] - System.err - Jun 28, 2017 1:22:27 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:22:27,480 ERROR [JMX client heartbeat 6] - System.err - Jun 28, 2017 1:22:27 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:24:22,459 ERROR [JMX client heartbeat 7] - System.err - Jun 28, 2017 1:24:22 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-28 13:24:23,471 ERROR [JMX client heartbeat 7] - System.err - Jun 28, 2017 1:24:23 PM RMIConnector RMIClientCommunicatorAdmin-doStop
+WARNING: Failed to call the method close():java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-28 13:24:23,471 ERROR [JMX client heartbeat 7] - System.err - Jun 28, 2017 1:24:23 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.net.ConnectException: Connection refused: connect
+2017-06-28 13:24:23,471 ERROR [JMX client heartbeat 7] - System.err - Jun 28, 2017 1:24:23 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:24:49,854 ERROR [JMX client heartbeat 8] - System.err - Jun 28, 2017 1:24:49 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:24:49,864 ERROR [JMX client heartbeat 8] - System.err - Jun 28, 2017 1:24:49 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:24:49,864 ERROR [JMX client heartbeat 8] - System.err - Jun 28, 2017 1:24:49 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:25:40,286 ERROR [JMX client heartbeat 9] - System.err - Jun 28, 2017 1:25:40 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:25:40,293 ERROR [JMX client heartbeat 9] - System.err - Jun 28, 2017 1:25:40 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:25:40,294 ERROR [JMX client heartbeat 9] - System.err - Jun 28, 2017 1:25:40 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:30:20,379 ERROR [JMX client heartbeat 10] - System.err - Jun 28, 2017 1:30:20 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:30:20,389 ERROR [JMX client heartbeat 10] - System.err - Jun 28, 2017 1:30:20 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:30:20,389 ERROR [JMX client heartbeat 10] - System.err - Jun 28, 2017 1:30:20 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:32:18,588 ERROR [JMX client heartbeat 11] - System.err - Jun 28, 2017 1:32:18 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-28 13:32:19,594 ERROR [JMX client heartbeat 11] - System.err - Jun 28, 2017 1:32:19 PM RMIConnector RMIClientCommunicatorAdmin-doStop
+WARNING: Failed to call the method close():java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-28 13:32:19,594 ERROR [JMX client heartbeat 11] - System.err - Jun 28, 2017 1:32:19 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.net.ConnectException: Connection refused: connect
+2017-06-28 13:32:19,594 ERROR [JMX client heartbeat 11] - System.err - Jun 28, 2017 1:32:19 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:33:26,852 ERROR [JMX client heartbeat 12] - System.err - Jun 28, 2017 1:33:26 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:33:26,862 ERROR [JMX client heartbeat 12] - System.err - Jun 28, 2017 1:33:26 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:33:26,862 ERROR [JMX client heartbeat 12] - System.err - Jun 28, 2017 1:33:26 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping
+2017-06-28 13:42:04,501 ERROR [JMX client heartbeat 13] - System.err - Jun 28, 2017 1:42:04 PM ClientCommunicatorAdmin restart
+WARNING: Failed to restart: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:42:04,501 ERROR [JMX client heartbeat 13] - System.err - Jun 28, 2017 1:42:04 PM ClientCommunicatorAdmin Checker-run
+WARNING: Failed to check connection: java.rmi.NoSuchObjectException: no such object in table
+2017-06-28 13:42:04,501 ERROR [JMX client heartbeat 13] - System.err - Jun 28, 2017 1:42:04 PM ClientCommunicatorAdmin Checker-run
+WARNING: stopping

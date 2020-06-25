@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	smlns:amq="http://activemq.apache.org/schema/core"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<amq:connectionfactory id="myConnectionFactory" brokerURL="tcp://INDELPC389:61616" />
+	<amq:topic id="topic1" physicalName="chattopic" />
+
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="myConnectionFactory" />
+	</bean>
+	
+	<bean id="basicJMSChat" class="com.jspider.jms.BasicJMSChat">
+		<property name="chatJMSTemplate" ref="jmsTemplate" />
+		<property name="chatTopic" ref="topic1" />
+	</bean>
+	
+	<bean id="messageListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+		<property name="connectionFactory" ref="myConnectionFactory" />
+		<property name="destination" ref="topic1" />
+		<property name="messageListener" ref="basicJMSChat" />
+		<property name="concurrentConsumer" value="1" />
+	</bean>
+
+</beans>

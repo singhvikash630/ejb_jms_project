@@ -1,0 +1,41 @@
+package com.jspider.test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+
+
+import javax.naming.InitialContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jspider.remote.FirstEjbBeanRemote;
+
+
+public class TestDemoEJB extends HttpServlet {
+	
+    public TestDemoEJB() {
+      
+    }
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		try {
+			InitialContext ctx=new InitialContext();
+			Object obj=ctx.lookup("FirstEjbBean/remote");
+			out.println(obj);
+			FirstEjbBeanRemote remote = (FirstEjbBeanRemote)obj;
+			String str=remote.testDemo();
+			out.println(str);
+			
+		} catch (Exception e) {
+			out.println(e.getStackTrace());
+		}
+		
+	}
+
+}

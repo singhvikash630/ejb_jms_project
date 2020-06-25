@@ -1,0 +1,5 @@
+package com.jspider.jpa;
+
+public class CreateEmployee {
+
+}

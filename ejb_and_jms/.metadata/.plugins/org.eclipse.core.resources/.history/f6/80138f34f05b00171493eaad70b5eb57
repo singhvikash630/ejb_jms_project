@@ -1,0 +1,36 @@
+package com.jspider.jms;
+
+import javax.jms.Connection;
+import javax.jms.DeliveryMode;
+import javax.jms.Destination;
+import javax.jms.MessageConsumer;
+import javax.jms.MessageProducer;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+
+public class HelloWorldConsumer {
+
+	public static void main(String[] args) {
+		try {
+			ActiveMQConnectionFactory connectionFactory=new ActiveMQConnectionFactory("tcp://localhost:61616");
+			Connection connection=connectionFactory.createConnection();
+			connection.start();
+			Session session=connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
+			Destination destination=session.createQueue("vikash");
+			
+			MessageConsumer consumer=session.createConsumer(destination);			
+			
+			consumer.receive(1000);
+			
+			session.close();
+			connection.close();
+		} catch (Exception e) {
+			
+			System.out.println(e.getStackTrace());
+		}
+
+	}
+
+}
